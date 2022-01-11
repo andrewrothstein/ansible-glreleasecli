@@ -1,0 +1,26 @@
+---
+- name: resolve platform specific vars
+  include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
+- name: downloading {{ glreleasecli_url }} to {{ glreleasecli_exe }}
+  become: true
+  become_user: root
+  get_url:
+    url: '{{ glreleasecli_url }}'
+    dest: '{{ glreleasecli_exe }}'
+    checksum: '{{ glreleasecli_checksum }}'
+    mode: 0755
+- name: linking {{ glreleasecli_link }} to {{ glreleasecli_exe }}
+  become: true
+  become_user: root
+  file:
+    src: '{{ glreleasecli_exe }}'
+    dest: '{{ glreleasecli_link }}'
+    state: link

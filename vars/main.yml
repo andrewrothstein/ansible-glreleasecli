@@ -1,0 +1,7 @@
+---
+# vars file for glreleasecli
+glreleasecli_platform: '{{ glreleasecli_os }}-{{ glreleasecli_arch }}'
+glreleasecli_url: '{{ glreleasecli_mirror }}/v{{ glreleasecli_ver }}/downloads/bin/release-cli-{{ glreleasecli_platform }}{{ glreleasecli_dotexe | default("") }}'
+glreleasecli_checksum: '{{ glreleasecli_checksums[glreleasecli_ver][glreleasecli_platform] }}'
+glreleasecli_exe: '{{ glreleasecli_install_dir }}/release-cli-{{ glreleasecli_ver }}-{{ glreleasecli_platform }}{{ glreleasecli_dotexe | default("") }}'
+glreleasecli_link: '{{ glreleasecli_install_dir }}/release-cli'
