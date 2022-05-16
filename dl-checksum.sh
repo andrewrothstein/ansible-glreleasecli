@@ -37,4 +37,4 @@ dl_ver() {
     dl $ver darwin amd64
 }
 
-dl_ver ${1:-0.10.0}
+dl_ver ${1:-0.11.0}

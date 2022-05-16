@@ -1,6 +1,6 @@
 ---
 # defaults file for glreleasecli
-glreleasecli_ver: 0.10.0
+glreleasecli_ver: 0.11.0
 glreleasecli_os: linux
 glreleasecli_arch: amd64
 glreleasecli_install_dir: /usr/local/bin
@@ -29,3 +29,26 @@ glreleasecli_checksums:
     windows-amd64: sha256:82d282cbe5f626663918a79dc4a8c0c177d5221f46a8a6d05d583a4daf5e5e96
     # https://gitlab.com/gitlab-org/release-cli/-/releases/v0.10.0/downloads/bin/release-cli-darwin-amd64
     darwin-amd64: sha256:7e3c52f21f62c170ff3874e7a44ce6553211740ef58564c9a2ede1ab9a5c916c
+  '0.11.0':
+    # https://gitlab.com/gitlab-org/release-cli/-/releases/v0.11.0/downloads/bin/release-cli-freebsd-386
+    freebsd-386: sha256:f8a0f91423b63f26e1294997fa92b8b61ac3ff264c019d0fa5df87406a2665fe
+    # https://gitlab.com/gitlab-org/release-cli/-/releases/v0.11.0/downloads/bin/release-cli-freebsd-amd64
+    freebsd-amd64: sha256:041997b9d3b77e185cf5ad17557ccb4e6f2abbcbbd109e25b18f0650be432a6b
+    # https://gitlab.com/gitlab-org/release-cli/-/releases/v0.11.0/downloads/bin/release-cli-freebsd-arm
+    freebsd-arm: sha256:c50394f9258b2dadb31528ae3b2c4cbbc5bb4497f7658200aabf15f3efea2efe
+    # https://gitlab.com/gitlab-org/release-cli/-/releases/v0.11.0/downloads/bin/release-cli-linux-386
+    linux-386: sha256:9598f11daaaf5d040fd86a9e41dc1344d16c207340b1135db2eb100b85227531
+    # https://gitlab.com/gitlab-org/release-cli/-/releases/v0.11.0/downloads/bin/release-cli-linux-amd64
+    linux-amd64: sha256:c3bc1c23c3c91267c550e8ab8b53f6b699ec914046434dff3857b4d317f179e1
+    # https://gitlab.com/gitlab-org/release-cli/-/releases/v0.11.0/downloads/bin/release-cli-linux-arm
+    linux-arm: sha256:3521cf36c4e79dbf776bfe7eb23a7b6a3c404659dc9f2bffafe99eb5f9e929a9
+    # https://gitlab.com/gitlab-org/release-cli/-/releases/v0.11.0/downloads/bin/release-cli-linux-arm64
+    linux-arm64: sha256:ab9993dc0eda80a0107373897ad000b9ecf68eefd366fcff895e7c8dcb66c79e
+    # https://gitlab.com/gitlab-org/release-cli/-/releases/v0.11.0/downloads/bin/release-cli-linux-ppc64le
+    linux-ppc64le: sha256:101dfc85cd8718808dbad7cbe70f9a4f92f79fa606319b573e34f1358f2a5123
+    # https://gitlab.com/gitlab-org/release-cli/-/releases/v0.11.0/downloads/bin/release-cli-windows-386.exe
+    windows-386: sha256:e147470de341f6122a4dbd3e3943f01e4c12d92df1e2a85e436403683cfbbc40
+    # https://gitlab.com/gitlab-org/release-cli/-/releases/v0.11.0/downloads/bin/release-cli-windows-amd64.exe
+    windows-amd64: sha256:cfb3a69bfa7cacca33610bff2d9309bc3b3e71955829dad1430877a8a9f6b4ef
+    # https://gitlab.com/gitlab-org/release-cli/-/releases/v0.11.0/downloads/bin/release-cli-darwin-amd64
+    darwin-amd64: sha256:ab1611e1336c24569f6ef5a0bc482ddec8fd8c47b4180ae28de64cdba7177082
